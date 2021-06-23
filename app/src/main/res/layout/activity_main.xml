@@ -29,7 +29,7 @@
         android:layout_marginEnd="27dp"
         android:layout_marginBottom="59dp"
         android:fontFamily="cursive"
-        android:text="Smart Solutions For Smart Business"
+        android:text="Smart Solutions"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartskills">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/smart_skills"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/smart_skills"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartSkills">
+        <activity android:name=".Clientes"></activity>
+        <activity android:name=".Aptidao" />
+        <activity android:name=".Listas" />
+        <activity android:name=".Newchecklist" />
+        <activity android:name=".Reuniao" />
+        <activity android:name=".Cliente" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

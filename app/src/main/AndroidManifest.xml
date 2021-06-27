@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/smart_skills"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartSkills">
-        <activity android:name=".Clientes"></activity>
+        <activity android:name=".Cliente"></activity>
+        <activity android:name=".Clientes" />
         <activity android:name=".Aptidao" />
         <activity android:name=".Listas" />
         <activity android:name=".Newchecklist" />
         <activity android:name=".Reuniao" />
-        <activity android:name=".Cliente" />
+        <activity android:name=".NewCliente" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

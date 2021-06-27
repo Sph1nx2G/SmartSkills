@@ -46,7 +46,7 @@ public class Clientes extends AppCompatActivity implements View.OnClickListener 
 
         switch (v.getId()){
             case R.id.NovoCliente:
-                i = new Intent(this, Cliente.class);
+                i = new Intent(this, NewCliente.class);
                 startActivity(i);
                 break;
 

@@ -2,9 +2,11 @@ package com.example.smartskills;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -33,8 +35,20 @@ public class Clientes extends AppCompatActivity implements View.OnClickListener 
 
         listView.setAdapter(arrayAdapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
+                    if (position >= 0){
+                        Intent intent = new Intent(view.getContext(), Cliente.class);
+                        startActivity(intent);
+                    }
+            }
+         });
 
-        btnNovoCliente =(Button)findViewById(R.id.NovoCliente);
+
+
+
+        btnNovoCliente = (Button)findViewById(R.id.NovoCliente);
 
         btnNovoCliente.setOnClickListener(this);
 

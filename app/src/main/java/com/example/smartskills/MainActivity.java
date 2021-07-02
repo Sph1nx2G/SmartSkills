@@ -2,19 +2,41 @@ package com.example.smartskills;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
+import android.widget.TextView;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public CardView  cardreuniao , cardlistas, cardnewcheck, cardclientes, cardwebsite, cardaptidao;
+
+    private TextView textView;
+
+    private static String ip = "192.168.1.101";
+    private static String port = "1433";
+    private static String Classes = "net.sourceforge.jtds.jdbc.Driver";
+    private static String database = "testDatabase";
+    private static String username = "test";
+    private static String password = "test";
+    private static String url = "jdbc:jtds:sqlserver://"+ip+":"+port+"/"+database;
+
+    private Connection connection = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         cardreuniao= (CardView) findViewById(R.id.reuniaocard);
         cardlistas= (CardView) findViewById(R.id.listascard);
@@ -31,6 +53,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cardwebsite.setOnClickListener(this);
         cardaptidao.setOnClickListener(this);
     }
+
+
+
+
 
     @Override
     public void onClick(View v) {

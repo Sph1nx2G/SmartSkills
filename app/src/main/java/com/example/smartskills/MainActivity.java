@@ -23,12 +23,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TextView textView;
 
-    private static String ip = "192.168.1.101";
+    private static String ip = "mysql742.umbler.com";
     private static String port = "1433";
     private static String Classes = "net.sourceforge.jtds.jdbc.Driver";
-    private static String database = "testDatabase";
-    private static String username = "test";
-    private static String password = "test";
+    private static String database = "smartskills";
+    private static String username = "smartskillsfct";
+    private static String password = "smartskills";
     private static String url = "jdbc:jtds:sqlserver://"+ip+":"+port+"/"+database;
 
     private Connection connection = null;

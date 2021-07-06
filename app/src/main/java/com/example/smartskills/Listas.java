@@ -23,14 +23,14 @@ import java.sql.Statement;
 public class Listas extends AppCompatActivity {
 
     private TextView textView;
-
+    private static String ipport = "mysql742.umbler.com:41890";
     private static String ip = "mysql742.umbler.com";
     private static String port = "41890";
     private static String Classes = "net.sourceforge.jtds.jdbc.Driver";
     private static String database = "smartskills";
     private static String username = "smartskillsfct";
     private static String password = "smartskills";
-    private static String url = "jdbc:mysql://"+ip+":"+port+"/"+database;
+    private static String url = "jdbc:jtds:mysql://"+ip+":"+port+"/"+database;
 
     private Connection connection = null;
 

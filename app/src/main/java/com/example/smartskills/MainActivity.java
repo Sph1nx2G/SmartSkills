@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static String database = "smartskills";
     private static String username = "smartskillsfct";
     private static String password = "smartskills";
-    private static String url = "jdbc:jtds:sqlserver://"+ip+":"+port+"/"+database;
+    private static String url = "jdbc:mysql://"+ip+":"+port+"/"+database;
 
     private Connection connection = null;
 

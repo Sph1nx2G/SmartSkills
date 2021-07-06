@@ -30,7 +30,7 @@ public class Listas extends AppCompatActivity {
     private static String database = "smartskills";
     private static String username = "smartskillsfct";
     private static String password = "smartskills";
-    private static String url = "mysql742.umbler.com:41890"+"/"+database;
+    private static String url = "jdbc:mysql://"+ip+":"+port+"/"+database;
 
     private Connection connection = null;
 

@@ -4,36 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6E8E8E"
-    tools:context=".Listas">
+    tools:context=".Listas" >
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="635dp"
-        android:layout_height="559dp"
-        android:layout_marginStart="323dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="322dp"
-        android:layout_marginBottom="131dp"
+    <Button
+        android:id="@+id/buttonsql"
+        android:layout_width="213dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="534dp"
+        android:layout_marginEnd="533dp"
+        android:layout_marginBottom="484dp"
+        android:onClick="sqlbutton"
+        android:text="Novo Cliente"
+        android:textSize="24sp"
+        app:backgroundTint="#84BFED"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/manutencao" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="403dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="439dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="438dp"
-        android:fontFamily="casual"
-        android:text="Em Construção"
+        android:layout_width="671dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="721dp"
+        android:fontFamily="monospace"
+        android:text="Listas"
         android:textAlignment="center"
         android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

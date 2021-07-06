@@ -52,11 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cardclientes.setOnClickListener(this);
         cardwebsite.setOnClickListener(this);
         cardaptidao.setOnClickListener(this);
+
     }
-
-
-
-
 
     @Override
     public void onClick(View v) {

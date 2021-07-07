@@ -30,7 +30,7 @@ public class Listas extends AppCompatActivity {
     private static String database = "smartskills";
     private static String username = "smartskillsfct";
     private static String password = "smartskills";
-    private static String url = "jdbc:jtds:sqlserver://"+ip+":"+port+";"+"databasename="+database+";user="+username+";password="+password+";";
+    private static String url = "jdbc:jtds:mysql://"+ip+":"+port+"/"+database;
 
     private Connection connection = null;
 
@@ -49,7 +49,7 @@ public class Listas extends AppCompatActivity {
 
         try {
             Class.forName(Classes);
-            connection = DriverManager.getConnection(url);
+            connection = DriverManager.getConnection(url, username, password);
             textView.setText("success");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

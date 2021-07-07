@@ -30,7 +30,7 @@ public class Listas extends AppCompatActivity {
     private static String database = "smartskills";
     private static String username = "smartskillsfct";
     private static String password = "smartskills";
-    private static String url = "jdbc:jtds:sqlserver://"+ip+":"+port+";"+"databasename="+database+"; user="+username+";password="+password+";";
+    private static String url = "jdbc:jtds:sqlserver://"+ip+":"+port+";"+"databasename="+database+";user="+username+";password="+password+";";
 
     private Connection connection = null;
 

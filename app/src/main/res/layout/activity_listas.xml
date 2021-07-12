@@ -14,7 +14,7 @@
         android:layout_marginEnd="533dp"
         android:layout_marginBottom="484dp"
         android:onClick="sqlbutton"
-        android:text="Novo Cliente"
+        android:text="Verificar Ligação"
         android:textSize="24sp"
         app:backgroundTint="#84BFED"
         app:layout_constraintBottom_toBottomOf="parent"
